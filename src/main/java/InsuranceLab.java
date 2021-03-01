@@ -11,19 +11,24 @@
  */
 public class InsuranceLab {
     public static void main(String[] args) {
-       
-
-
-    System.out.println("What is your age?");
+         System.out.println("What is your age?");
+         
 Scanner CustAge = new Scanner(System.in);
-
 int Age = CustAge.nextInt();
-int Cost = 5 * Age + 300;
+TotCost(Age);
+int price = TotCost(Age);
 
-System.out.println("$" + Cost + " is the total cost of insurance for your age");
+
+
+
+System.out.println("$" + price + " is the total cost of insurance for your age");
 
 
   }
-}
+    public static int TotCost(int agenumb){
+    int Cost = 5 * agenumb + 300;
+    return Cost;
+    }
     
+ }  
 
